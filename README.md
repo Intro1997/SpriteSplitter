@@ -17,7 +17,7 @@ More detail please see [pypi](https://pypi.org/project/sprite-splitter/).
 ```python
 from tools.sprite_splitter import AlphaSpriteSplitter, SplitterAlgorithm
 
-img_path = "test/assets/multiple_test0.png"
+img_path = "tests/assets/multiple_test0.png"
 splitter = AlphaSpriteSplitter(img_path)
 box_border_color = (255, 0, 0, 255)
 # default is SplitterAlgorithm.SPRITE_SCAN

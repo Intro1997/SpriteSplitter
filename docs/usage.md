@@ -53,7 +53,7 @@ You can show split result and specify color(in integer, not float):
 ```python
 from tools.sprite_splitter import AlphaSpriteSplitter
 
-img_path = "test/assets/multiple_test0.png"
+img_path = "tests/assets/multiple_test0.png"
 splitter = AlphaSpriteSplitter(img_path)
 # you can use SplitterAlgorithm.EDGE_DETECT by
 # splitter.show_split_result((255, 0, 0, 255), SplitterAlgorithm.EDGE_DETECT)
@@ -66,7 +66,7 @@ You also can specify boxes:
 from tools.sprite_splitter import AlphaSpriteSplitter
 
 
-img_path = "test/assets/multiple_test0.png"
+img_path = "tests/assets/multiple_test0.png"
 splitter = AlphaSpriteSplitter(img_path)
 splitter.show_split_result_by_boxes(splitter.get_sprite_boxes(), (255, 0, 0, 255))
 ```
