@@ -1,6 +1,6 @@
 [project]
 name = "sprite-splitter"
-version = "0.0.2"
+version = "0.0.3"
 description = "A sprite image splitter for rgba format image."
 readme = "README.md"
 requires-python = ">=3.12"
