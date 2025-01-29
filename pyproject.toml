@@ -1,18 +1,20 @@
 [project]
 name = "sprite-splitter"
 version = "0.0.1"
-authors = [
-  { name="Binimation" },
-]
 description = "A sprite image splitter for rgba format image."
 readme = "README.md"
-requires-python = ">=3.12.7"
+requires-python = ">=3.6"
+authors = [
+    { name = "Binimation", email = "your.email@example.com" },
+]
+license = { file = "LICENSE" }
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-license = "MIT"
-license-files = ["LICEN[CS]E*"]
 
 [project.urls]
 Homepage = "https://github.com/Intro1997/SpriteSplitter"
+
+[tool.setuptools]
+license-files = []
