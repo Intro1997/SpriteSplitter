@@ -4,6 +4,14 @@
 
 A sprite image splitter for rgba format image.
 
+Install with
+
+```shell
+pip install sprite-splitter
+```
+
+More detail please see [pypi](https://pypi.org/project/sprite-splitter/).
+
 ## Usage
 
 ```python
