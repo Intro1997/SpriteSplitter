@@ -1,8 +1,8 @@
-from tools.box import Box
+from .box import Box
 from PIL import Image, ImageDraw
 from typing import List, Tuple
 from queue import Queue
-from tools.edge_finder import AlphaSpriteEdgeStartFinder
+from .edge_finder import AlphaSpriteEdgeStartFinder
 import os
 from enum import Enum
 
@@ -57,6 +57,8 @@ class AlphaSpriteSplitter:
     def __init__(self, image_path: str):
         self._image_path = image_path
         self._image = self._load_image(image_path)
+        if self._image is None:
+            raise Exception(f"Open image {image_path} failed")
         self._image_pixel = self._image.load()
         self._image_size = (self._image.width, self._image.height)
         self._edge_finder = AlphaSpriteEdgeStartFinder(self._image)

@@ -1,5 +1,5 @@
 from PIL import Image
-from tools.box import Box
+from .box import Box
 from typing import List, Tuple
 
 

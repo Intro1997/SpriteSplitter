@@ -1,9 +1,9 @@
 [project]
 name = "sprite-splitter"
-version = "0.0.1"
+version = "0.0.2"
 description = "A sprite image splitter for rgba format image."
 readme = "README.md"
-requires-python = ">=3.6"
+requires-python = ">=3.12"
 authors = [
     { name = "Binimation", email = "your.email@example.com" },
 ]
@@ -12,6 +12,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
+dependencies = ["Pillow~=10.4.0"]
 
 [project.urls]
 Homepage = "https://github.com/Intro1997/SpriteSplitter"
