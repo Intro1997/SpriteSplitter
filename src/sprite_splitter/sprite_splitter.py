@@ -211,10 +211,13 @@ class AlphaSpriteSplitter:
         hand. So we add this pitch to expand width and height of 
         scanner, to make A pixel in scan range.
         """
-        if self._image_pixel[(x, py + scanner_data["h"])][3] != 0:
-            scanner_data["w"] += 1
-            scanner_data["h"] += 1
-            return True
+        pos = (x, py + scanner_data["h"])
+        if self._check_pos_valid(pos) and self._image_pixel[pos][3] != 0:
+            pos = (x, py + scanner_data["h"] + 1)
+            if self._check_pos_valid(pos):
+                scanner_data["w"] += 1
+                scanner_data["h"] += 1
+                return True
 
         return has_colored_edge
 

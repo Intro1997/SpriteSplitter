@@ -1,11 +1,11 @@
 [project]
 name = "sprite-splitter"
-version = "0.0.3"
+version = "0.0.4"
 description = "A sprite image splitter for rgba format image."
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
-    { name = "Binimation", email = "your.email@example.com" },
+    { name = "Binimation" },
 ]
 license = { file = "LICENSE" }
 classifiers = [
